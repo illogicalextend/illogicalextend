@@ -25,7 +25,7 @@
         }
 
         .header-logo {
-            max-width: 600px;
+            max-width: 400px;
             width: 100%;
             height: auto;
             margin: 0 auto;
@@ -50,7 +50,7 @@
             border: 1px solid #f5c6cb;
             color: #721c24;
             padding: 20px;
-            margin: 30px auto;
+            margin: 20px auto;
             max-width: 800px;
             border-radius: 5px;
             text-align: center;
@@ -63,19 +63,27 @@
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 60px 20px;
+            padding: 15px 20px 30px 20px;
         }
 
         .tagline {
             text-align: center;
             font-size: 1.5em;
             color: #2c5f4f;
-            margin-bottom: 60px;
+            margin-bottom: 30px;
             font-weight: 300;
         }
 
         .section {
-            margin-bottom: 80px;
+            margin-bottom: 60px;
+        }
+
+        .section:not(:first-child) {
+            margin-top: 0;
+        }
+
+        .section.about {
+            margin-bottom: 30px;
         }
 
         .section h2 {
@@ -212,7 +220,7 @@
 
         @media (max-width: 768px) {
             .header-logo {
-                max-width: 90%;
+                max-width: 80%;
             }
 
             .header h1 {
@@ -248,7 +256,7 @@
     <div class="container">
         <p class="tagline">Mobile Speech Pathology services in The Ponds and surrounding suburbs.</p>
 
-        <section class="section">
+        <section class="section about">
             <h2>About</h2>
             <div class="about-content">
                 <div class="about-image">
